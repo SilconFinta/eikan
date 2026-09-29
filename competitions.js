@@ -14,3 +14,14 @@ document.querySelectorAll(".expand-btn").forEach(btn => {
   });
 
 });
+document.querySelectorAll(".info-btn").forEach(btn => {
+ 
+btn.addEventListener("click", () => {
+ 
+const url = btn.dataset.url;
+ 
+window.open(url, "_blank");
+ 
+});
+ 
+});
